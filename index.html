@@ -11,59 +11,98 @@
     />
   </head>
   <body>
+    <div class="particles-container">
+      <div id="particles"></div>
+    </div>
+
     <div class="container">
       <header>
-        <button id="theme-toggle" class="theme-toggle">
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
           <i class="fas fa-moon"></i>
         </button>
-        <h1><i class="fas fa-volume-up"></i> Speak It</h1>
+        <div class="logo-container">
+          <div class="logo-icon">
+            <i class="fas fa-volume-up"></i>
+          </div>
+        </div>
+        <h1>Speak It</h1>
         <p>Convert your text to speech instantly</p>
       </header>
 
       <main>
         <div class="text-input-container">
-          <textarea
-            id="text-input"
-            placeholder="Type something here and I'll say it..."
-          ></textarea>
+          <div class="textarea-wrapper">
+            <textarea
+              id="text-input"
+              placeholder="Type something here and I'll say it..."
+            ></textarea>
+            <div class="text-counter">0 characters</div>
+          </div>
           <div class="controls">
-            <div class="voice-options">
-              <label for="voice-select">Voice:</label>
-              <select id="voice-select"></select>
+            <div class="control-group">
+              <div class="voice-options">
+                <label for="voice-select">Voice:</label>
+                <select id="voice-select"></select>
+              </div>
             </div>
-            <div class="rate-container">
-              <label for="rate">Speed:</label>
-              <input
-                type="range"
-                id="rate"
-                min="0.5"
-                max="2"
-                value="1"
-                step="0.1"
-              />
-              <span id="rate-value">1</span>
+            <div class="control-group">
+              <div class="rate-container">
+                <label for="rate">Speed:</label>
+                <input
+                  type="range"
+                  id="rate"
+                  min="0.5"
+                  max="2"
+                  value="1"
+                  step="0.1"
+                />
+                <span id="rate-value">1</span>
+              </div>
             </div>
-            <div class="pitch-container">
-              <label for="pitch">Pitch:</label>
-              <input
-                type="range"
-                id="pitch"
-                min="0"
-                max="2"
-                value="1"
-                step="0.1"
-              />
-              <span id="pitch-value">1</span>
+            <div class="control-group">
+              <div class="pitch-container">
+                <label for="pitch">Pitch:</label>
+                <input
+                  type="range"
+                  id="pitch"
+                  min="0"
+                  max="2"
+                  value="1"
+                  step="0.1"
+                />
+                <span id="pitch-value">1</span>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="button-container">
-          <button id="speak-btn"><i class="fas fa-play"></i> Speak</button>
-          <button id="pause-btn"><i class="fas fa-pause"></i> Pause</button>
-          <button id="resume-btn"><i class="fas fa-forward"></i> Resume</button>
-          <button id="stop-btn"><i class="fas fa-stop"></i> Stop</button>
-          <button id="clear-btn"><i class="fas fa-trash"></i> Clear</button>
+          <button id="speak-btn" class="primary-btn">
+            <i class="fas fa-play"></i> Speak
+          </button>
+          <button id="pause-btn" class="control-btn">
+            <i class="fas fa-pause"></i> Pause
+          </button>
+          <button id="resume-btn" class="control-btn">
+            <i class="fas fa-forward"></i> Resume
+          </button>
+          <button id="stop-btn" class="control-btn">
+            <i class="fas fa-stop"></i> Stop
+          </button>
+          <button id="save-btn" class="primary-btn save-btn">
+            <i class="fas fa-save"></i> Save Audio
+          </button>
+          <button id="clear-btn" class="danger-btn">
+            <i class="fas fa-trash"></i> Clear
+          </button>
+        </div>
+
+        <div class="visualization-container">
+          <canvas id="audio-visualizer"></canvas>
         </div>
       </main>
 
@@ -72,6 +111,7 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
