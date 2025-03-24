@@ -27,7 +27,7 @@
 
 **Speak It** transforms written text into natural speech in real-time, providing an accessible and intuitive interface for text-to-speech conversion. Built with modern web technologies, it offers precise control over voice characteristics while maintaining a sleek, minimalist design.
 
-Whether you're creating content for accessibility, learning pronunciation, or simply want to listen to text instead of reading it, Speak It delivers a seamless experience across all devices — with zero dependencies and no server requirements.
+Whether you're creating content for accessibility, learning pronunciation, or simply want to listen to text instead of reading it, Speak It delivers a seamless experience across all devices — with zero dependencies and no server requirements. Try it now at [https://farhantamzid.github.io/text-to-speech-app/](https://farhantamzid.github.io/text-to-speech-app/).
 
 ## Key Features
 
@@ -43,7 +43,7 @@ Whether you're creating content for accessibility, learning pronunciation, or si
 
 ## Live Demo
 
-Experience Speak It right now: [Live Demo](#) *(coming soon)*
+Experience Speak It right now: [Live Demo](https://farhantamzid.github.io/text-to-speech-app/)
 
 ## Installation
 
@@ -150,6 +150,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Farhan Tamzid - [GitHub Profile](https://github.com/farhantamzid)
 
 Project Link: [https://github.com/farhantamzid/TextToSpeechApp](https://github.com/farhantamzid/TextToSpeechApp)
+
+Website: [https://farhantamzid.github.io/text-to-speech-app/](https://farhantamzid.github.io/text-to-speech-app/)
 
 ---
 
